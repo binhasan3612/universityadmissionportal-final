@@ -1,0 +1,3 @@
+# Node modules and cache should not be committed
+node_modules/
+.cache/

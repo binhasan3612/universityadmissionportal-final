@@ -41,7 +41,10 @@ const Header = () => {
                 <Link to="/register" className="nav-link">Register</Link>
               </>
             ) : (
-              <button className="nav-link logout-btn" onClick={handleLogout}>Logout</button>
+              <button className="btn classy-logout" onClick={handleLogout} title="Logout">
+                <i className="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+              </button>
             )}
           </nav>
 
@@ -73,7 +76,10 @@ const Header = () => {
                 <Link to="/register" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Register</Link>
               </>
             ) : (
-              <button className="nav-link logout-btn" onClick={() => { handleLogout(); setIsMobileMenuOpen(false); }}>Logout</button>
+              <button className="btn classy-logout" onClick={() => { handleLogout(); setIsMobileMenuOpen(false); }} title="Logout">
+                <i className="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+              </button>
             )}
           </nav>
         )}
